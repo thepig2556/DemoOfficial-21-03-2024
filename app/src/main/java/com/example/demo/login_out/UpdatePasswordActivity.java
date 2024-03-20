@@ -45,6 +45,10 @@ public class UpdatePasswordActivity extends AppCompatActivity {
                 {
                     Toast.makeText(UpdatePasswordActivity.this, "Mật khẩu mới và Xác nhận mật khẩu không trùng", Toast.LENGTH_SHORT).show();
                 }
+                if (newPassword.equals(oldPassword))
+                {
+                    Toast.makeText(UpdatePasswordActivity.this, "Mật khẩu mới và Mật khẩu cũ không thể trùng nhau", Toast.LENGTH_SHORT).show();
+                }
                 else {
                     user.updatePassword(newPassword).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

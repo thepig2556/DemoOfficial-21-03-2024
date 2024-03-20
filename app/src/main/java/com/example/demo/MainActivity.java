@@ -233,6 +233,7 @@ holder.mview.setOnClickListener(new View.OnClickListener() {
                         String s = "thepig6704@gmail.com";
                         if (user.getEmail().equals(s))
                         {
+                            Toast.makeText(this, "Welcome Back", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(this, InsertAcitivity.class);
                             startActivity(intent);
                         }
@@ -252,6 +253,7 @@ holder.mview.setOnClickListener(new View.OnClickListener() {
                         String s = "thepig6704@gmail.com";
                         if (user.getEmail().equals(s))
                         {
+                            Toast.makeText(this, "Welcome Back", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(this, RetrieveDataActivity.class);
                             startActivity(intent);
                         }
